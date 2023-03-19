@@ -4,6 +4,10 @@ const routes = [
 	{
 		path: '/signup',
 		component: () => import('@/views/RegisterName.vue'),
+	},
+	{
+		path: '/lobby',
+		component: () => import('@/views/Lobby.vue'),
 	}
 ];
 
