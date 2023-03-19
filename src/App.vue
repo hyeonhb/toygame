@@ -1,21 +1,13 @@
 <template>
-  <register-name v-if="isNeedSignup" />
-  <lobby v-else />
+  <the-lobby />
 </template>
 
 <script>
-import RegisterName from './views/RegisterName.vue';
-import Lobby from './views/Lobby.vue';
+import TheLobby from './views/TheLobby.vue';
 
 export default {
   components: {
-    RegisterName,
-    Lobby,
-  },
-  data() {
-    return {
-      isNeedSignup: true,
-    };
+    TheLobby,
   },
 }
 </script>

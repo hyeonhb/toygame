@@ -1,5 +1,34 @@
-html, body, #app {
+* {
   margin: 0;
-  height: 100%;
-  overflow: hidden;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+  min-height: 100%;
+	height: 100%;
+}
+
+#app {
+	width: 100%;
+	min-height: 100vh;
+	height: 100%;
+}
+
+.full-screen {
+	position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;   
+}
+
+.send-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
