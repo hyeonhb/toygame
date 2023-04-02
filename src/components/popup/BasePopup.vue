@@ -5,7 +5,10 @@
 				<h3 class="header-title">{{ headerTitle }}</h3>
 			</div>
 			<div class="popup-contents">
-				<div>hi</div>
+				<slot name="popup-body" />
+			</div>
+			<div class="popup-footer">
+				<slot name="popup-foot" />
 			</div>
 		</div>
 	</div>
@@ -22,6 +25,11 @@ export default {
 				required: true,
 			},
 	},
+	data() {
+		return {
+
+		}
+	}
 }
 </script>
   
@@ -41,11 +49,20 @@ export default {
 }
 .popup-header {
 	border-bottom: 1px solid black;
+	padding: 10px;
+	margin-bottom: 10px;
 }
 .header-title {
 	padding: 5px;
 }
 .popup-contents {
 	padding: 10px;
+}
+.popup-footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	padding: 10px;
+	gap: 10px
 }
 </style>
