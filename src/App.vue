@@ -17,7 +17,18 @@ export default {
 			isOpenPopup: true,
 		};
 	},
+  created() {
+    this.checkNickname();
+  },
 	methods: {
+    checkNickname() {
+      const nickname = this.getNickname();
+      this.isOpenPopup = nickname === '';
+    },
+    getNickname() {
+      // TODO API: GET, get nickname
+      return '';
+    },
 		closePopup() {
 			this.isOpenPopup = false;
 		},

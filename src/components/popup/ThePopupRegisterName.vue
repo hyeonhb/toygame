@@ -54,7 +54,7 @@ export default {
 			const isVerified = this.getErrorMessage(this.nickname) === '';
 			if (!isVerified) return false;
 
-			// TODO API: post, register nickname
+			// TODO API: POST, register nickname
 			this.closePopup();
 		}
 	}
