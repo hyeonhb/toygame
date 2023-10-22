@@ -60,3 +60,7 @@ body {
 	border-color: #808080;
 	color: #808080;
 }
+.direction-row {
+	display: flex;
+	flex-direction: row;
+}

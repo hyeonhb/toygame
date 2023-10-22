@@ -48,7 +48,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .base-input {
   width: 100%;
   height: 30px;

@@ -1,15 +1,18 @@
 <template>
-  <div>
+  <section>
+    <the-header />
     <router-view />
     <the-popup-register-name v-if="isOpenPopup" :is-edit="false" @closePopup="closePopup" />
-  </div>
+  </section>
 </template>
 
 <script>
+import TheHeader from './components/common/TheHeader.vue';
 import ThePopupRegisterName from '@/components/popup/ThePopupRegisterName.vue';
 
 export default {
   components: {
+    TheHeader,
     ThePopupRegisterName,
   },
   data() {
@@ -27,7 +30,7 @@ export default {
     },
     getNickname() {
       // TODO API: GET, get nickname
-      return '';
+      return 'TEMP';
     },
 		closePopup() {
 			this.isOpenPopup = false;

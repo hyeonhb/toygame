@@ -33,7 +33,7 @@ export default {
 }
 </script>
   
-<style>
+<style scoped>
 .popup-wrapper {
 	background-color: gray;
 	opacity: 0.5;
