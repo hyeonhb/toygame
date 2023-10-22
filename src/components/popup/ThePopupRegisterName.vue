@@ -5,7 +5,9 @@
 		</template>
 		<template v-slot:popup-foot>
 			<!-- <button type="button" class="btn-basic btn-cancel" @click="closePopup">Cancel</button> -->
-			<button type="button" class="btn-basic btn-highlight" @click="postNickname">{{ this.actionType }}</button>
+			<button type="button" class="btn-basic btn-highlight" :class="{'disabled-click': onError}" @click="postNickname">
+				{{ this.actionType }}
+			</button>
 		</template>
 	</base-popup>
 </template>
@@ -28,6 +30,11 @@ export default {
 			nickname: '',
 			actionType: this.isEdit ? '수정' : '등록',
 		}
+	},
+	computed: {
+		onError() {
+			return this.nicknameErrMsg !== '';
+		},
 	},
 	created() {
 		this.updateNickname('');

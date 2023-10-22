@@ -1,13 +1,26 @@
 <template>
-  <router-view />
+  <div>
+    <router-view />
+    <the-popup-register-name v-if="isOpenPopup" :is-edit="false" @closePopup="closePopup" />
+  </div>
 </template>
 
 <script>
-// import TheLobby from './views/TheLobby.vue';
+import ThePopupRegisterName from '@/components/popup/ThePopupRegisterName.vue';
 
-// export default {
-//   components: {
-//     TheLobby,
-//   },
-// }
+export default {
+  components: {
+    ThePopupRegisterName,
+  },
+  data() {
+		return {
+			isOpenPopup: true,
+		};
+	},
+	methods: {
+		closePopup() {
+			this.isOpenPopup = false;
+		},
+	},
+}
 </script>
