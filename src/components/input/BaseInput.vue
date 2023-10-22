@@ -65,5 +65,7 @@ export default {
 }
 .error-message {
   color: red;
+  margin-top: 5px;
+  font-size: 12px;
 }
 </style>

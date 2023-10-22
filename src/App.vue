@@ -1,13 +1,13 @@
 <template>
-  <the-lobby />
+  <router-view />
 </template>
 
 <script>
-import TheLobby from './views/TheLobby.vue';
+// import TheLobby from './views/TheLobby.vue';
 
-export default {
-  components: {
-    TheLobby,
-  },
-}
+// export default {
+//   components: {
+//     TheLobby,
+//   },
+// }
 </script>

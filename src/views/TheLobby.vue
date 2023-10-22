@@ -1,7 +1,7 @@
 <template>
 	<section aria-roledescription="Lobby">
 		<div>Lobby</div>
-		<the-popup-register-name v-if="isOpenPopup" @closePopup="closePopup" />
+		<the-popup-register-name v-if="isOpenPopup" :is-edit="false" @closePopup="closePopup" />
 	</section>
 </template>
 

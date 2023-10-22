@@ -48,9 +48,9 @@ export default {
 	box-shadow: 5px 10px 10px 1px rgba(0,0,0,.3)
 }
 .popup-header {
-	border-bottom: 1px solid black;
+	/* border-bottom: 1px solid black; */
 	padding: 10px;
-	margin-bottom: 10px;
+	/* margin-bottom: 10px; */
 }
 .header-title {
 	padding: 5px;
